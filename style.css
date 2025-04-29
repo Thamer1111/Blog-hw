@@ -43,6 +43,7 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
+  
   gap: 3%;
   width: 95%;
 }
@@ -147,7 +148,6 @@ body {
   width: 12%;
 }
 .item4 {
-  grid-row: 3 / 6;
   height: 50vh;
   width: 96%;
   text-align: center;
@@ -157,7 +157,7 @@ body {
   box-shadow: 5px 5px 5px 5px rgb(128, 127, 127);
 }
 .item5 {
-  height: 43vh;
+  height: 30vh;
   width: 96%;
   text-align: center;
   display: flex;
@@ -168,7 +168,7 @@ body {
 
 .Tags-contant{
   width: 90%;
-  height: 18vh;
+  height: 12vh;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -261,23 +261,22 @@ body {
   color: white;
 }
 
-.log-header {
+.login-header {
+  width: 100%;
+  height: 15vh;
   text-align: center;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
 }
-
+.form-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form-container {
   background: #fff;
-  width: 90vw;
-  max-width: 30rem;
-  height: 40vh;
-  position: absolute;
-  top: 25vh;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 90%;
+  height: 70%;
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
   border-radius: 0.5rem;
   display: flex;
@@ -286,7 +285,7 @@ body {
 }
 form {
   width: 90%;
-  height: 90%;
+  height: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -326,18 +325,18 @@ button:hover {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
 /* media tablat */
   /* header css start */
 .header-section {
-  height: 30vh;
+  height: 13vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .header {
   text-align: center;
-  height: 20vh;
+  height: 8vh;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -352,23 +351,23 @@ button:hover {
 /* article start */
 .contant {
   /* border: 1px solid red; */
-  width: 98vw;
-  height: 210vh;
+  width: 100%;
+  height: 240vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .container {
   /* border: 1px solid rgb(255, 0, 204); */
-  display: grid;
-  grid-template-columns: 2fr 1fr;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 3%;
-  width: 95vw;
+  width: 95%;
 }
 .item1 {
-  height: 80vh;
-  width: 100%;
-  grid-row: 1/3;
+  height: 40vh;
+  width: 96%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -377,7 +376,7 @@ button:hover {
 }
 .story {
   /* border: 5px solid rgb(234, 255, 0); */
-  height: 60vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -387,7 +386,7 @@ button:hover {
 }
 .more-info {
   /* border: 5px solid rgb(255, 0, 204); */
-  height: 30vh;
+  height: 11vh;
   width: 95%;
   display: flex;
   justify-content: space-between;
@@ -397,7 +396,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 5px;
+  gap: 1px;
   width: 15%;
   /* border: 5px solid rgb(93, 0, 255); */
 }
@@ -405,14 +404,15 @@ button:hover {
   background-color: black;
   color: white;
   width: 20%;
+  height: 2vh;
 }
 .more-info input {
-  height: 70%;
-  width: 20%;
+  height: 50%;
+  width: 30%;
 }
 .item2 {
-  height: 60vh;
-  width: 100%;
+  height: 50vh;
+  width: 96%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -435,7 +435,7 @@ button:hover {
 
 .item3 {
   height: 50vh;
-  width: 100%;
+  width: 96%;
   display: flex;
   flex-direction: column;
   box-shadow: 5px 5px 5px 5px rgb(128, 127, 127);
@@ -466,9 +466,8 @@ button:hover {
   width: 12%;
 }
 .item4 {
-  grid-row: 3 / 6;
-  height: 80vh;
-  width: 100%;
+  height: 40vh;
+  width: 96%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -476,8 +475,8 @@ button:hover {
   box-shadow: 5px 5px 5px 5px rgb(128, 127, 127);
 }
 .item5 {
-  height: 30vh;
-  width: 100%;
+  height: 43vh;
+  width: 96%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -487,31 +486,39 @@ button:hover {
 
 .Tags-contant{
   width: 90%;
-  display: grid;
+  height: 18vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   grid-template-columns: auto auto auto auto auto;
   gap: 5px;
 }
 .Tags-contant p {
+  width: 9vh;
+  height: 3vh;
+  align-content: center;
+  gap: 5px;
   background-color: #dcd9d9;
 }
 /* artical end */
 .footer{
   background-color: #616161;
-  height: 18vh;
+  height: 13vh;
   padding: 1%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
 .Previous{
-  width: 10%;
-  height:200%;
+  width: 10vh;
+  height: 4vh;
   background-color: rgb(0, 0, 0, 50%);
   color: rgb(255, 255, 255, 50%);
 }
 .Next{
-  width: 10%;
-  height: 200%;
+  width: 10vh;
+  height: 4vh;
   background-color: black;
   color: white;
 }
@@ -520,13 +527,14 @@ button:hover {
 }
 .navbar {
   background-color: #616161;
-  height: 9vh;
+  height: 8vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content:  center;
 }
 .nav-contant{
-  height: 9vh;
+  height: 15vh;
   width: 97%;
   display: flex;
   align-items: center;
@@ -543,7 +551,7 @@ button:hover {
   gap: 1em;
 }
 .log-in, .sign-up {
-  width: 13vh;
+  width: 9vh;
   height: 5vh;
   text-align: center;
   border: solid 2px black;
@@ -571,23 +579,22 @@ button:hover {
   color: white;
 }
 
-.log-header {
-  text-align: center;
+.login-header {
+  width: 100%;
   height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
-
+.form-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form-container {
   background: #fff;
-  width: 90vw;
-  max-width: 30rem;
-  height: 40vh;
-  position: absolute;
-  top: 25vh;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 90%;
+  height: 35%;
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
   border-radius: 0.5rem;
   display: flex;
@@ -596,7 +603,7 @@ button:hover {
 }
 form {
   width: 90%;
-  height: 90%;
+  height: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -635,7 +642,7 @@ button:hover {
 /* end media tablat */
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1025px) {
 /* media labtop */
   /* header css start */
 .header-section {
@@ -880,23 +887,23 @@ button:hover {
   color: white;
 }
 
-.log-header {
-  text-align: center;
+.login-header {
+  width: 100%;
   height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
+.form-section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .form-container {
   background: #fff;
-  width: 90vw;
-  max-width: 30rem;
-  height: 40vh;
-  position: absolute;
-  top: 25vh;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 40%;
+  height: 35%;
   box-shadow: 0 0 0.5rem rgba(0,0,0,0.1);
   border-radius: 0.5rem;
   display: flex;
@@ -905,7 +912,7 @@ button:hover {
 }
 form {
   width: 90%;
-  height: 90%;
+  height: 85%;
   display: flex;
   flex-direction: column;
 }
